@@ -1,0 +1,17 @@
+<div class="time-selector">
+    <p-overlayPanel class="my-overlay" #op>
+        <br />
+        <div class="inner-panel">
+            <h3>Time selection widget</h3>
+            <br>
+            <app-monthpicker (outputToParent)="GetOutputVal($event)"></app-monthpicker>
+        </div>
+    </p-overlayPanel>
+</div>
+
+<div class="input-field" (click)="op.toggle($event)" style="margin-left: 100px">
+    <h4 style="color: white; float: left; margin-left: 10px;">{{recievedFromChild}}</h4>
+    &nbsp; &nbsp;
+    <span class="symbol-span">{{ arrowSymbol }}</span> &nbsp;&nbsp;&nbsp;
+</div>
+

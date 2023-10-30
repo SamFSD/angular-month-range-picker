@@ -1,0 +1,179 @@
+.my-table-div {
+    font-family: 'Quicksand', sans-serif;
+    border: 1.3px solid #73767b;
+    border-radius: 5px;
+    /* padding: 20px 20px 10px 20px; */
+    display: none;
+    position: absolute;
+    z-index: 1;
+    align-content: center;
+    background-color: white;
+}
+
+.dropdown {
+    position: relative;
+    display: block;
+}
+
+.iamDisabled {
+    color: #1474a4 !important;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    border: none;
+    box-shadow: 1px 1px 15px #888888;
+    z-index: 1000;
+}
+
+dls-textbox {
+    margin-top: 10px;
+    width: 327px !important;
+}
+
+.range-box {
+    border: 0.5px solid #b7b7b7;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 13px;
+    margin-top: 10px;
+}
+
+.symbol-span {
+    color: rgb(140, 140, 140);
+}
+
+.invalidStyle {
+    border: 2.8px solid #ffa500;
+    pointer-events: none !important;
+}
+
+.year-field {
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+.my-table {
+  padding-left: 16px;
+  padding-bottom: 16px;
+  touch-action: none;
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+}
+
+.month-name {
+  display: inline-block;
+  text-decoration: none;
+  color: #73767b;
+  font-family: 'Muli', sans-serif;
+  width: 54px;
+  height: 54px;
+  cursor: pointer;
+  text-align: center;
+  line-height: 54px;
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+
+.notCurrentYear {
+  color: #c4cbd6;
+}
+
+.month-name:hover {
+  border-radius: 100%;
+  background-color: #1474a4;
+  color: white;
+}
+
+.isEdge {
+  border-radius: 100%;
+  background-color: #1474a4;
+  color: white;
+}
+
+.inRange {
+  background-color: #1474a4;
+  opacity: 0.5;
+  color: white;
+}
+
+.isLowerEdge {
+  background-color: none;
+  background: linear-gradient(to right, transparent 50%, #1474a4 50%);
+}
+
+.isUpperEdge {
+  background-color: none;
+  background: linear-gradient(to right,  #1474a4 50%, transparent 50%);
+}
+
+input[type='number'] {
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    padding: 0 8px;
+}
+
+input[type='number']::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    cursor: pointer;
+    display: block;
+    width: 8px;
+    color: #333;
+    text-align: center;
+    position: relative;
+}
+
+input[type='number']:hover::-webkit-inner-spin-button {
+    background: #eee url('http://i.stack.imgur.com/YYySO.png') no-repeat 50% 50%;
+    width: 14px;
+    height: 14px;
+    padding: 4px;
+    position: relative;
+    right: 4px;
+    border-radius: 28px;
+}
+
+.iconfont {
+    font-family: 'dls-images' !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.super-div {
+    /* background: crimson; */
+    width: 327px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.current-year {
+    font-size: 20px;
+    color: #2b86b2;
+    vertical-align: middle;
+}
+
+.left-arrow,
+.right-arrow {
+    color: #2b86b2;
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+.left-arrow:hover,
+.right-arrow:hover {
+    cursor: pointer;
+}
+
+
+/* ::placeholder {
+
+    color: black !important;
+    opacity: 1;
+
+} */

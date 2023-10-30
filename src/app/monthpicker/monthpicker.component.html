@@ -1,0 +1,80 @@
+<div class="dropdown">
+  <span>
+    <div
+      class="range-box"
+      [class.invalidStyle]="isApplied"
+      (keydown)="sendToParent($event.target.value)"
+      contentEditable="true"
+    >
+      <h4>{{ currentLowerBoundLabel }}</h4>
+      &nbsp;&nbsp;&nbsp;
+      <span class="symbol-span">=></span>&nbsp;&nbsp;&nbsp;
+      <h4>{{ currentUpperBoundLabel }}</h4>
+      &nbsp;&nbsp;&nbsp;
+      <i
+        class="iconfont"
+        *ngIf="invalid"
+        style="float: right; margin-top: 3px; margin-right: 10px; color: #ffa500;"
+        >&#xf19a;</i
+      >
+    </div>
+  </span>
+  <div class="my-table-div dropdown-content">
+    <div class="year-div">
+      <div class="super-div">
+        <table style="width:100%">
+          <tr>
+            <td>
+              <i
+                class="fa fa-angle-left"
+                aria-hidden="true"
+                (click)="decrementdisplayYear()"
+              ></i>
+            </td>
+            <td>
+              <h4 class="current-year">{{ years[currentYearIndex] }}</h4>
+            </td>
+            <td>
+              <i
+                class="fa fa-angle-right"
+                aria-hidden="true"
+                (click)="incrementdisplayYear()"
+              ></i>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <br />
+    <div class="my-table">
+      <div
+        *ngFor="
+          let x of monthsData.slice(
+            currentMonthsViewSliceIndexes[0],
+            currentMonthsViewSliceIndexes[1]
+          );
+          let i = index
+        "
+        class="month-name"
+        (click)="onClick(i)"
+        [ngClass]="{
+          isEdge:
+            x.isLowerEdge ||
+            x.isUpperEdge ||
+            (x.isInRange && !rangeState.edge2Exists),
+          notCurrentYear: currentYearIndex === 0 ? i > 11 : i < 6 || i > 17
+        }"
+      >
+        <div
+          [ngClass]="{
+            inRange: x.isInRange && rangeState.edge2Exists,
+            isLowerEdge: x.isLowerEdge,
+            isUpperEdge: x.isUpperEdge
+          }"
+        >
+          {{ x.monthName }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

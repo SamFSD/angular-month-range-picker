@@ -1,0 +1,94 @@
+.menu-holder {
+    max-width: calc(100% - 200px);
+    width: calc(100% - 200px);
+    display: inline-block;
+    height: 100%;
+}
+
+.time-selector {
+    position: relative;
+    display: inline-block;
+    background-color: #1474a4;
+    padding-right: 90px;
+}
+
+.input-field {
+    height: 30px;
+    width: 230px;
+    /* background: chocolate; */
+    border: 0px none #2b86b2;
+    border-radius: 2px;
+    text-align: right;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 20px;
+    background-color: #2b86b2;
+    color: white;
+    cursor: pointer;
+}
+
+.iamDisabled {
+    background-color: whitesmoke;
+    opacity: 0.3;
+    pointer-events: none !important;
+}
+
+.inner-panel {
+    width: 360px;
+    /* background-color: red; */
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.my-overlay {
+    position: fixed;
+    background-color: white;
+    box-shadow: 1px 1px 15px #888888;
+    margin-top: 80px;
+    margin-left: 80px;
+}
+
+.comparing-switch {
+    /* background: yellowgreen; */
+}
+
+.comparing-label {
+    /* background: blue; */
+}
+
+dls-combobox,
+dls-dropdown {
+    margin-top: 10px;
+    width: 100% !important;
+}
+
+dls-toggle-switch {
+    /* margin-top: 20px; */
+}
+
+.first-col {
+    vertical-align: middle;
+    /* background: cyan; */
+}
+
+.second-col {
+    /* background: green; */
+    padding-left: 30px !important;
+}
+
+.my-row {
+    /* background: cornflowerblue; */
+}
+
+table.stats tbody td:nth-child(even) {
+    vertical-align: middle !important;
+}
+
+table.stats tbody td {
+    vertical-align: middle !important;
+}
+
+::placeholder {
+    color: black !important;
+}
